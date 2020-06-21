@@ -1,12 +1,12 @@
 package pl.coderslab.warsztat5krkw04.model;
 
 public class Book {
-    private  long id;
-    private  String isbn;
-    private  String title;
-    private  String author;
-    private  String publisher;
-    private  String type;
+    private long id;
+    private String isbn;
+    private String title;
+    private String author;
+    private String publisher;
+    private String type;
 
     public Book() {
     }
@@ -18,6 +18,15 @@ public class Book {
         this.author = author;
         this.publisher = publisher;
         this.type = type;
+    }
+
+    public void marge(Book book) {
+        this.id = book.id;
+        this.isbn = book.isbn;
+        this.title = book.title;
+        this.author = book.author;
+        this.publisher = book.publisher;
+        this.type = book.type;
     }
 
     public long getId() {
